@@ -1,0 +1,28 @@
+#include <iostream>
+/*
+Program swap
+Nama = Muhamad Ilham Habib
+NPM = 140810180018
+Deskripsi = Program ini mencetak secara swap
+Tahun = 2019
+*/
+
+using namespace std;
+void swap();
+
+int main(){
+    int x=5;
+    int y=4;
+    cout<<" x is "<<x<<endl;
+    cout<<" y is "<<y<<endl;
+    swap(x,y);
+    cout<<"After swap"<<endl;
+    cout<<" x is "<<x<<endl;
+    cout<<" y is "<<y<<endl;
+}
+void swap(int& x, int& y){
+    int temp = x;
+    x=y;
+    y=temp;
+}
+

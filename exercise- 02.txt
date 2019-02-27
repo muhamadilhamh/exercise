@@ -1,0 +1,21 @@
+#include <iostream>
+/*
+Program = convert celcius to Fahrenheit
+Nama = Muhamad Ilham Habib
+NPM = 140810180018
+Deskripsi = Program ini mencetak hasil dari cercius to fahrenheit
+Tahun = 2019
+*/
+using namespace std;
+
+float cel2Fah(float temp);
+
+int main(){
+    int celcius=9;
+    float fahrenheit = cel2Fah(celcius);
+    cout<<"temp is = "<<fahrenheit;
+}
+float cel2Fah(float temp){
+    temp = temp*9/5+32;
+    return(temp);
+}

@@ -1,0 +1,28 @@
+#include <iostream>
+
+/*
+Program Fizz buzz
+Nama = Muhamad Ilham Habib
+NPM = 140810180018
+Deskripsi = Program ini mencetak angka 1 to 100, fizz jika 3, buzz jika 5, dan hasil 3 dan 5 adalah fizzbuzz
+Tahun = 2019
+*/
+
+using namespace std;
+
+int main(){
+    for(int i=1;i<=100;i++){
+        if(i%3==0 && i%5!=0){
+            cout<<"fizz";
+        }
+        else if(i%3!=0 && i%5==0){
+            cout<<"buzz";
+        }
+        else if (i%3==0 && i%5==0){
+            cout<<"fizzbuzz";
+        }
+        else{
+            cout<<i;
+        } cout<<endl;
+    }
+}
